@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css\homepagecss.css">
+    <title>ALC2.0 Address Book</title>
+</head>
+<body>
+    <h1>My Address Book</h1>
+    <h2>Add Contact</h2>
+    
+    <form id="form" autocomplete="on" onsubmit="return saveContact()">
+        <fieldset>
+            <legend>Add Contact</legend>
+            <ol>
+                <li class="input">
+                    <label for="fullName" class="field">Full Name:</label>*<br>
+                    <input id="fullName" type="text" name="fullName" autofocus required>                
+                </li>
+                <br>
+                <li class="input">
+                    <label for="nickName" class="field">Nick Name:</label><br>
+                    <input id="nickName" type="text">
+                </li>
+                <br>
+                <li class="input">
+                    <label for="phoneNumber" class="field">Phone Number:</label>*<br>
+                    <input id="phoneNumber" type="tel" required>   
+                </li>
+                <br>
+                <li>
+                    <label for="homeAddress" class="field">Home Address:</label><br>
+                    <input id="homeAddress" type="text">
+                </li>
+                <br>
+                <li>
+                    <label for="emailAddress" class="field">E-mail:</label><br>
+                    <input id="emailAddress" type="email" >
+                </li>
+                <br>
+                <li>
+                    <input id="male" type="radio" name="Gender" value="Male">
+                    <label for="male">Male</label>
+                    <br>
+                    <input id="female" type="radio" name="Gender" value="Female">
+                    <label for="female">Female</label>
+                    
+                </li>
+            </ol>
+            <input type="submit" id="saveContactID" value="Save Contact">
+        </fieldset>
+
+    </form>
+
+    <p id="viewContacts"><a href="contacts/contactlist.html" target="_blank">View Contacts...</a></p>
+
+    <script type="text/javascript" src="js\homepagejs.js"></script>
+</body>
+</html>
